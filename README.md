@@ -1,8 +1,13 @@
 🛡️ SIEM SOC Dashboard - Home Lab Edition
 מערכת SIEM ביתית מלאה - Detection Engine, SOC Dashboard, MITRE ATT&CK Mapping, Telegram AlertsBuilt from scratch with Python, Elasticsearch, Flask & JavaScript
 
+
+
 🎯 Project Overview
 A fully functional Security Information and Event Management (SIEM) system built for a home lab environment. The system collects Windows logs via Sysmon + Winlogbeat, processes them through a custom Python Detection Engine with 18 MITRE ATT&CK-mapped rules, and displays real-time alerts in a SOC-style web dashboard.
+
+
+
 
 Architecture
 ┌──────────────┐     Winlogbeat      ┌──────────────────┐     Python Engine     ┌─────────────┐
@@ -14,6 +19,9 @@ Architecture
                                                                                │  Telegram   │
                                                                                │  Alerts 📱  │
                                                                                └─────────────┘
+
+
+
 
 🔥 Detection Rules (18 Rules — MITRE ATT&CK Mapped)
 
