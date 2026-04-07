@@ -9,18 +9,20 @@ A fully functional Security Information and Event Management (SIEM) system built
 
 
 
-Architecture
+## Architecture
 
-
+```text
 ┌──────────────┐     Winlogbeat      ┌──────────────────┐     Python Engine     ┌─────────────┐
-│  Windows MA  │ ──── Sysmon logs ──→ │  Elasticsearch   │ ──── 18 Rules ──────→ │  Dashboard   │
-│  (Endpoint)  │     Port 9200       │  (Kali Linux)    │     MITRE ATT&CK     │  Flask + JS  │
+│  Windows MA  │ ─── Sysmon logs ─→ │  Elasticsearch   │ ──── 18 Rules ─────→ │  Dashboard  │
+│  (Endpoint)  │     Port 9200       │  (Kali Linux)    │    MITRE ATT&CK      │  Flask + JS │
 └──────────────┘                     └──────────────────┘                       └─────────────┘
-                                                                                      │
-                                                                               ┌──────┴──────┐
-                                                                               │  Telegram   │
-                                                                               │  Alerts 📱  │
-                                                                               └─────────────┘
+                                                                                       │
+                                                                                       │
+                                                                                ┌──────┴──────┐
+                                                                                │  Telegram   │
+                                                                                │  Alerts 📱  │
+                                                                                └─────────────┘
+```
 
 
 
