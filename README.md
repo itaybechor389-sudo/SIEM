@@ -51,17 +51,20 @@ A fully functional Security Information and Event Management (SIEM) system built
 | R18  | Data Exfiltration        | CRITICAL |
 
 
-🏗️ Project Structure
+## 🏗️ Project Structure
+
+```text
 siem-project/
-├── siem_engine.py          # Main detection engine — polls Elasticsearch, runs rules
+├── siem_engine.py          # Main detection engine - polls Elasticsearch, runs rules
 ├── detection_rules.py      # 18 detection rules with MITRE ATT&CK mapping
-├── dashboard.py            # Flask web server — serves dashboard + API
+├── dashboard.py            # Flask web server - serves dashboard + API
 ├── generate_alerts.py      # Alert generator for demo/testing (12,000 events)
 ├── alerts.json             # Alert storage (auto-generated)
 ├── static/
 │   └── index.html          # SOC Dashboard web interface
 ├── SIEM_Dashboard.jsx      # React version of dashboard (for portfolio)
 └── SIEM_Dashboard_Live.html # Standalone demo (no server needed)
+```
 
 🚀 Quick Start
 Prerequisites
